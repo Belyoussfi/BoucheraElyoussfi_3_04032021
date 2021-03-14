@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header1{
+    .logo{
+        text-align: center;
+    }
+    img{
+        width: 40%;
+    }
+}
+
+.header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    a{ 
+        text-decoration: none;
+        color: black;
+    }
+}
