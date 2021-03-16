@@ -1,16 +1,18 @@
 body{
-    margin: 0;
     max-width: 600px;
-    display: flex;
-    flex-direction: column;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .header1{
     .logo{
         text-align: center;
-    }
-    img{
-        width: 40%;
+        img{
+            width: 60%;
+        }
     }
 }
 
@@ -24,3 +26,109 @@ body{
         color: black;
     }
 }
+
+.accueil{
+    display: flex;
+    flex-direction: column;
+    &_search{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        border: solid #dcdcdc 1px;
+        background-color: #c0c0c0;
+        padding: 0.5em;
+        i{
+            text-align: center;
+        }
+        input{
+            background-color: #c0c0c0;
+            text-align: center;
+        }
+    }
+    &_intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em 0;
+        background-color: #f2f2f2;
+        h1{
+            font-size: 1.5em;
+            text-align: center;
+            margin: 0 1.5em;
+        }
+        p{
+            text-align: center;
+            margin: 0.5em 0 0 0;
+            font-size: 1.1em ;
+        }
+        .btn{
+            margin: 2em 0 0 0;
+            border: solid black 1px;
+            border-radius: 40px;
+            padding: 0.8em;
+            /*PS: Exemple pour tous les boutons: variable pour background-color + animation au survol.  */
+            a{
+                text-decoration: none;
+                color: white;  
+            }
+        }
+    }
+}
+
+.filtres{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    /* idem pour tous les h2: margin/size/font-family*/
+    h2{
+        margin: 0 0 0.5em 0;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        > li{
+            border: black solid 1px;
+            list-style: none;
+            text-align: center;
+            padding: 1em;
+            margin-top: 0.5em;
+            border-radius: 1em;
+            input{
+                margin-left: 1.5em;
+            }
+        }
+    }
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+.restaurants{
+    padding: 1em 1em;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    article{
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5em;
+        height: 230px;
+        width: 100%;
+        figure{
+            background-color: white;
+            border-radius: 1em;
+            img{
+                width: 100%;
+                height: 140px;
+                object-fit: cover;
+                border-radius: 1em 1em 0 0;
+            }
+        }
+    }
+}
+

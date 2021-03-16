@@ -16,29 +16,29 @@
         <div class="logo">
             <img src="public/images/ohmyfood.png" alt="logo de Ohmyfood"/>
         </div>
-    </header> 
-    <section>   
+    </header> <!--Créer section pour animation load spinner-->
+    <section class="accueil">   
         <form>
-            <p class="localisation">
+            <p class="accueil_search">
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="text" name="recherche" value="Paris, Belleville">
+                <input type="text" value="Paris, Belleville">
             </p>
         </form>
-        <article class="presentation">
+        <article class="accueil_intro">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button class="btn"><a href="#">Explorer nos restaurants</a></button>
+            <p class="btn"><a href="#">Explorer nos restaurants</a></p>
         </article>
     </section>
-    <section>
+    <section class="filtres">
         <h2>Fonctionnement</h2>
-        <ul class="Filtres"><!--PS: établir des class et insérer icones-->
-            <li><i class="fas fa-mobile-alt"></i><input type="text" value="Choisissez un restaurant"></li>
-            <li><input type="text" value="Composez votre menu"></li>
-            <li><input type="text" value="Dégustez au restaurant"></li>
+        <ul><!--PS: établir des class et insérer icones + modif liste avec ol-->
+            <li> <i class="fa-mobile-alt fas tuto__icon" aria-hidden="true"></i><input type="text" value="Choisissez un restaurant"></li>
+            <li><i class="fa-list-ul fas tuto__icon" aria-hidden="true"></i><input type="text" value="Composez votre menu"></li>
+            <li><i class="fa-store fas tuto__icon" aria-hidden="true"></i><input type="text" value="Dégustez au restaurant"></li>
         </ul>
     </section>
-    <section>
+    <section class="restaurants">
         <h2>Restaurants</h2>
         <article><!--Insérer les liens menant vers la page de leur menu proposé + effet remplissage button-->
             <figure>
