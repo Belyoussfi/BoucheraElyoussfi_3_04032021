@@ -12,11 +12,12 @@
     <title>Ohmyfood</title>
 </head>
 <body>
-    <header class="header1">
+    <header class="header1">  
         <div class="logo">
             <img src="public/images/ohmyfood.png" alt="logo de Ohmyfood"/>
         </div>
-    </header> <!--Créer section pour animation load spinner-->
+    </header> <!--Créer section pour animation load spinner--> 
+    <section class="loader">Oh my food</section>
     <section class="accueil">   
         <form>
             <p class="accueil_search">
@@ -25,80 +26,80 @@
             </p>
         </form>
         <article class="accueil_intro">
-            <h1>Réservez le menu qui vous convient</h1>
+            <p class="bold">Réservez le menu qui vous convient</p>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <p class="btn"><a href="#">Explorer nos restaurants</a></p>
         </article>
     </section>
     <section class="filtres">
-        <h2>Fonctionnement</h2>
-        <ul><!--PS: établir des class et insérer icones + modif liste avec ol-->
-            <li> <i class="fa-mobile-alt fas tuto__icon" aria-hidden="true"></i><input type="text" value="Choisissez un restaurant"></li>
-            <li><i class="fa-list-ul fas tuto__icon" aria-hidden="true"></i><input type="text" value="Composez votre menu"></li>
-            <li><i class="fa-store fas tuto__icon" aria-hidden="true"></i><input type="text" value="Dégustez au restaurant"></li>
+        <p class="bold">Fonctionnement</p>
+        <ul><!--PS: établir des class pour span 3-->
+            <li><span>1</span><i class="fa-mobile-alt fas tuto__icon"></i><input type="text" value="Choisissez un restaurant"></li>
+            <li><span>2</span><i class="fa-list-ul fas tuto__icon"></i><input type="text" value="Composez votre menu"></li>
+            <li><span>3</span><i class="fa-store fas tuto__icon"></i><input type="text" value="Dégustez au restaurant"></li>
         </ul>
     </section>
     <section class="restaurants">
-        <h2>Restaurants</h2>
-        <article><!--Insérer les liens menant vers la page de leur menu proposé + effet remplissage button-->
+        <p class="bold">Restaurants</p>
+        <article class="carte"><!--Insérer les liens menant vers la page de leur menu proposé + effet remplissage button-->
             <figure>
-                <p>Nouveau</p>
+                <p class="new">Nouveau</p>
                 <a href="#"><img src="public/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo plat la palette du goût"/></a>
                 <figcaption>
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                    <aside>
-                        <button><a href="#"><i class="far fa-heart"></i></a></button>
-                    </aside>
+                    <section>
+                        <p>La palette du goût</p>
+                        <p>Ménilmontant</p>
+                    </section>    
+                    <p class="heart"><a href="#"><i class="far fa-heart"></i></a></p>
                 </figcaption>
             </figure>
         </article>
-        <article><!--Insérer les liens menant vers la page de leur menu proposé + effet remplissage button-->
+        <article class="carte"><!--Insérer les liens menant vers la page de leur menu proposé + effet remplissage button-->
             <figure>
-                <p>Nouveau</p>
+                <p class="new">Nouveau</p>
                 <a href="#"><img src="public/images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo plat la note enchantée"/></a>
                 <figcaption>
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
-                    <aside>
-                        <button><a href="#"><i class="far fa-heart"></i></a></button>
-                    </aside>
+                    <section>
+                        <p>La note enchantée</p>
+                        <p>Charonne</p>
+                    </section>    
+                    <p class="heart"><a href="#"><i class="far fa-heart"></i></a></p>
                 </figcaption>
             </figure>
         </article>
-        <article><!--Insérer les liens menant vers la page de leur menu proposé + effet remplissage button-->
+        <article class="carte"><!--Insérer les liens menant vers la page de leur menu proposé + effet remplissage button-->
             <figure>
                 <a href="#"><img src="public/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo plat A la française"/></a>
                 <figcaption>
-                    <h3>A la française</h3>
-                    <p>Cité Rouge</p>
-                    <aside>
-                        <button><a href="#"><i class="far fa-heart"></i></a></button>
-                    </aside>
+                    <section>
+                        <p>A la française</p>
+                        <p>Cité Rouge</p>
+                    </section>
+                    <p class="heart"><a href="#"><i class="far fa-heart"></i></a></p>
                 </figcaption>
             </figure>
         </article>
-        <article><!--Insérer les liens menant vers la page de leur menu proposé + effet remplissage button-->
+        <article class="carte"><!--Insérer les liens menant vers la page de leur menu proposé + effet remplissage button-->
             <figure>
                 <a href="#"><img src="public/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo plat Le délice "/></a>
                 <figcaption>
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
-                    <aside>
-                        <button><a href="#"><i class="far fa-heart"></i></a></button>
-                    </aside>
+                    <section>
+                        <p>Le délice des sens</p>
+                        <p>Folie-Méricourt</p>
+                    </section>
+                    <p class="heart"><a href="#"><i class="far fa-heart"></i></a></p>
                 </figcaption>
             </figure>
         </article>
     </section>
     <footer>
         <section>
-            <h4>Ohmyfood</h4>
+            <h4 class="color">Ohmyfood</h4>
             <ul>
-                <li class="fas fa-utensils"><a href="#">Proposer un restaurant</a></li>
-                <li class="fas fa-hands-helping"><a href="#">Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="mailto:adresse@mail.com">Contact</a></li>
+                <li class="color fas fa-utensils"><a class="color space" href="#">Proposer un restaurant</a></li>
+                <li class="color fas fa-hands-helping"><a class="color space" href="#">Devenir partenaire</a></li>
+                <li><a class="color" href="#">Mentions légales</a></li>
+                <li><a class="color" href="mailto:adresse@mail.com">Contact</a></li>
             </ul>
         </section>
     </footer>

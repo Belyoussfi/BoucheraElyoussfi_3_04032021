@@ -2,17 +2,27 @@ body{
     max-width: 600px;
 }
 
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+
 * {
     margin: 0;
     padding: 0;
 }
 
+h1, h4{
+    font-family: shrikhand;
+}
+
+p, span, a{
+    font-family: roboto;
+}
+
 .header1{
-    .logo{
-        text-align: center;
-        img{
-            width: 60%;
-        }
+    text-align: center;
+    .logo img{
+        width: 60%;
     }
 }
 
@@ -22,7 +32,6 @@ body{
     align-items: center;
     margin-left: 1em;
     a{ 
-        text-decoration: none;
         color: black;
     }
 }
@@ -33,102 +42,276 @@ body{
     &_search{
         display: flex;
         justify-content: center;
-        margin: 0;
         border: solid #dcdcdc 1px;
         background-color: #c0c0c0;
         padding: 0.5em;
-        i{
-            text-align: center;
-        }
         input{
             background-color: #c0c0c0;
             text-align: center;
+            font-size: 1em;
         }
     }
     &_intro{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        text-align: center;
         padding: 2em 0;
         background-color: #f2f2f2;
-        h1{
-            font-size: 1.5em;
-            text-align: center;
-            margin: 0 1.5em;
-        }
-        p{
-            text-align: center;
-            margin: 0.5em 0 0 0;
-            font-size: 1.1em ;
-        }
-        .btn{
-            margin: 2em 0 0 0;
-            border: solid black 1px;
-            border-radius: 40px;
-            padding: 0.8em;
-            /*PS: Exemple pour tous les boutons: variable pour background-color + animation au survol.  */
-            a{
-                text-decoration: none;
-                color: white;  
-            }
+        .bold{
+            font-size: 1.7em;
+            margin-bottom: 0.5em;
         }
     }
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+a{
+    text-decoration: none;
 }
 
 .filtres{
     display: flex;
     flex-direction: column;
     margin: 1em;
-    /* idem pour tous les h2: margin/size/font-family*/
-    h2{
-        margin: 0 0 0.5em 0;
-    }
     ul{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         > li{
-            border: black solid 1px;
+            margin: 0.5em 0 0 0.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
             list-style: none;
-            text-align: center;
-            padding: 1em;
-            margin-top: 0.5em;
             border-radius: 1em;
+            padding: 1em;
             input{
-                margin-left: 1.5em;
+                background-color: #f2f2f2;
+            }
+            span{
+                position: absolute;
+                z-index: 1;
+                left: 1.5em;
+                border: solid #9356dc 1px;
+                border-radius: 50%;
+                font-size: 0.7em;
+                padding: 0.4em;
+                color: white;
+                background-color: #9356dc;
+            }
+            i{
+                margin-right: 1em;
+                &:hover{
+                    color:#9356DC;
+                }
             }
         }
     }
 }
 
-input{
+input[type=text]{
+    font-size: 1em;
     border: none;
     outline: none;
+    font-family: roboto;
 }
 
 .restaurants{
-    padding: 1em 1em;
+    padding: 2em 1em;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
-    article{
+    .carte{
+        border: solid #f2f2f2 1px;
         border-radius: 1em;
         display: flex;
         flex-direction: column;
         margin-top: 0.5em;
-        height: 230px;
         width: 100%;
         figure{
             background-color: white;
             border-radius: 1em;
+            display: flex;
+            flex-direction: column;
+            .new{
+                position: absolute;
+                align-self: flex-end;
+                margin: 1em 1em 0 0;
+                background-color: $tertiaire;
+                padding: 0.4em;
+                color: darken($tertiaire, 40%);
+            }
             img{
                 width: 100%;
                 height: 140px;
                 object-fit: cover;
                 border-radius: 1em 1em 0 0;
             }
+            figcaption{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1em 1em 0 1em;
+                padding-bottom: 1em;
+                section{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p:nth-child(1){
+                        font-size: 1em;
+                        font-weight: bold;
+                    }
+                    p:nth-child(2){
+                        font-size: 0.8em;
+                    }
+                }
+                .heart i{
+                    font-size: 1.4em;
+                    color: black;
+                }
+            }
         }
     }
 }
 
+footer{
+    padding: 1em 0 1em 1em;
+    background-color: #303030;
+    section{ 
+        display: flex;
+        flex-direction: column;
+        h4{
+            font-size: 1.1em;
+        }
+        .color{
+            color:white
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            li{
+                margin-top: 1em;
+                .space{
+                    margin-left: 0.5em;
+                }
+                a{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}
+
+.restaurant{
+    display: flex;
+    flex-direction: column;
+    img{
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &_menu{
+        background-color: #f2f2f2;
+        margin-top: -2.3em;
+        padding: 1em 1em 3em 1em;
+        border-radius: 1.5em 1.5em 0 0;
+        display: flex;
+        flex-direction: column;
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                font-size: 1.3em;
+            }
+        }
+    }
+    .menu{
+        section{
+            margin-top: 1em;
+            display: flex;
+            flex-direction: column;
+            article{
+                border-radius: 10px;
+                background-color: white;
+                padding: 0.7em;
+                margin-top: 0.5em;
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                > p{
+                    font-weight: bold;
+                }
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    p{
+                        font-size: 0.8em;
+                    }
+                    p:nth-child(2){
+                        font-weight: bold;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+.animation{
+    animation: opacity 4s;
+    animation-fill-mode: both;
+}
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.animation1{
+    animation-delay: 1s;
+}
+
+.animation2{
+    animation-delay: 2s;
+}
+
+.animation3{
+    animation-delay: 3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.btn{
+    margin: 2em 3em 0 3em;
+    border-radius: 40px;
+    background: $primaire radial-gradient(circle, transparent 1%, $primaire 1%) center/15000%;
+    padding: 0.8em;
+    text-align: center;
+    transition: background 3s;
+    &:hover{
+        background-color: $secondaire;
+        background-size: 100%;
+    }
+    a{
+        color: white; 
+    }
+} 
