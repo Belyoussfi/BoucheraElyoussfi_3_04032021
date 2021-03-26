@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/animation/animation.css">
+    <link rel="stylesheet" href="public/css/menu/menu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,18 +14,12 @@
     <title>A la française</title>
 </head>
 <body>
-    <header class="header1 header2">
-        <p><!--PS: Insérer le lien vers la page "Accueil"-->
-            <a href="#" class="fas fa-arrow-left"></a>
-        </p>
-        <p class="logo">
-            <img src="public/images/ohmyfood.png" alt="logo de Ohmyfood"/>
-        </p>
+    <header class="header2">
+        <a class="fas fa-arrow-left" href="index.html"></a>
+        <h1>ohmyfood</h1>
     </header> 
     <section class="restaurant">
-        <article>
-            <p><img src="public/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo plat restaurant à la française"></p> 
-        </article>
+        <p><img src="public/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo plat restaurant à la française"></p> 
         <section class="restaurant_menu"><!--PS: effets demandés voir sur doc debrief projet 3-->
             <article class="title">
                 <h1>A la française</h1>
@@ -31,82 +27,104 @@
             </article>
             <section class="menu">
                 <section class="animation animation1">
-                    <section>
-                        <p>ENTREES</p>
-                        <article>
-                            <p>Tartare de poulpe acidulé</p>
-                            <div>
-                                <p>Aux zests d'orange</p>
-                                <p>25€</p>
-                                <p class="icone"><i class="fas fa-check"></i></p>
-                            </div> 
-                        </article>     
-                    </section>
-                    <article>
-                        <p>Velouté de légumes d'antan</p>
-                        <div>
-                            <p>Carotte, panais, topinambour</p>
-                            <p>35€</p>
-                        </div>
+                    <h3>ENTREES</h3><!--Titre pour référencement naturel-->
+                    <article class="card">
+                        <article class="intitule">
+                            <h4 class="suspension">Tartare de poulpe acidulé</h4>
+                            <p>Aux zests d'orange</p>
+                        </article>
+                        <article class="sous_intitule">
+                            <p>25€</p>
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>
                     </article>
-                    <article>
-                        <p>Soupe à l'oignon</p>
-                        <div>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4 class="suspension">Velouté de légumes d'antan</h4>
+                            <p class="suspension">Carotte, panais, topinambour</p>
+                        </article>    
+                        <article class="sous_intitule">
+                            <p>35€</p>
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>
+                    </article>    
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Soupe à l'oignon</h4>
                             <p>Revisitée</p>
-                            <p>20€</p>
-                        </div>
+                        </article>
+                            <article class="sous_intitule">
+                                <p>20€</p>
+                                <p class="check"><i class="fas fa-check"></i></p>
+                            </article>    
                     </article>
-                </section>
+                </section>    
+                
                 <section class="animation animation2">
-                    <section>
-                        <p>PLATS</p>
-                        <article>
-                            <p>Coquilles Saint-Jacques</p>
-                            <div>
-                                <p>Accompagnées d'une purée de panais</p>
-                                <p>40€</p>
-                            </div>    
+                    <h3>PLATS</h3>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4 class="suspension">Coquilles Saint-Jacques</h4>
+                            <p class="suspension">Accompagnées d'une purée de panais</p>
                         </article>
-                    </section>
-                    <article>
-                        <p>Magret de canard</p>
-                        <div>
-                            <p>Et parmentier de pommes de terres</p>
-                            <p>35€</p>
-                        </div>    
+                        <article class="sous_intitule"> 
+                            <p>40€</p>
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>    
                     </article>
-                    <article>
-                        <p>Pigeonneau d'Ile-et-Vilaine</p>
-                        <div>
-                            <p>Sur son lit de gnocchis aux légumes</p>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Magret de canard</h4>
+                            <p class="suspension">Et parmentier de pommes de terres</p>
+                        </article>
+                        <article class="sous_intitule">
+                            <p>35€</p>
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>
+                    </article>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4 class="suspension">Pigeonneau d'Ile-et-Vilaine</h4>
+                            <p class="suspension">Sur son lit de gnocchis aux légumes</p>
+                        </article>    
+                        <article class="sous_intitule">
                             <p>44€</p>
-                        </div>    
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>    
                     </article>
                 </section>
+
                 <section class="animation animation3">
-                    <section>
-                        <p>DESSERTS</p>
-                        <article>
-                            <p>Pétales de violettes glacés</p>
-                            <div>
-                                <p>Et purée de noisettes</p>
-                                <p>18€</p>
-                            </div>   
+                    <h3>DESSERTS</h3>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4 class="suspension">Pétales de violettes glacés</h4>
+                            <p>Et purée de noisettes</p>
                         </article>
-                    </section>
-                    <article>
-                        <p>Fondant au chocolat</p>
-                        <div>
+                        <article class="sous_intitule"> 
+                            <p>18€</p>
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>
+                    </article>    
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Fondant au chocolat</h4>
                             <p>Revisité</p>
+                        </article>
+                        <article class="sous_intitule">
                             <p>22€</p>
-                        </div>
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>
                     </article>
-                    <article>
-                        <p>Millefeuille croustillant</p>
-                        <div>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Millefeuille croustillant</h4>
                             <p>Myrtilles et pâte d'amande</p>
+                        </article>
+                        <article class="sous_intitule">  
                             <p>23€</p>
-                        </div>  
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>  
                     </article>
                 </section>    
             </section>

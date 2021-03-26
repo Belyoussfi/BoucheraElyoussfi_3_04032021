@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/animation/animation.css">
+    <link rel="stylesheet" href="public/css/menu/menu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,98 +14,117 @@
     <title>Le délice des sens</title>
 </head>
 <body>
-    <header class="header1 header2">
-        <p><!--PS: Insérer le lien vers la page "Accueil"-->
-            <a href="#" class="fas fa-arrow-left"></a>
-        </p>
-        <div class="logo">
-            <img src="public/images/ohmyfood.png" alt="logo de Ohmyfood"/>
-        </div>
+    <header class="header2">
+        <a href="index.html" class="fas fa-arrow-left"></a><!--lien menant vers la page d'accueil-->
+        <h1>ohmyfood</h1>
     </header> 
     <section class="restaurant">
         <p><img src="public/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo plat restaurant le délice des sens"></p> 
-        <section class="restaurant_menu"><!--PS: effets demandés voir sur doc debrief projet 3-->
+        <section class="restaurant_menu">
             <article class="title">
                 <h1>Le délice des sens</h1>
                 <p><a href="#" class="far fa-heart"></a></p>
             </article>    
             <section class="menu">
-                <section class="animation animation1">
-                    <section>
-                        <p>ENTREES</p>
-                        <article>
-                            <p>Tartare de thon</p>
-                            <div>
-                                <p>Assaisonné au yuzu</p>
-                                <p>25€</p>
-                            </div>    
+                <section class="animation animation1"> <!--Cette class sert pour les effets en decalage en groupe "entree/plat/dessert"-->
+                    <h3>ENTREES</h3><!--h3 et h4 utilisés pour le référencement-->
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Tartare de thon</h4>
+                            <p>Assaisonné au yuzu</p>
                         </article>
-                    </section>    
-                    <article>
-                        <p>Bouchée de homard croustillant</p>
-                        <div>
-                            <p>Et sa farandole de petits légumes</p>
+                        <article class="sous_intitule">
+                            <p>25€</p>
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>      
+                    </article> 
+                    <article class="card">
+                        <article class="intitule">
+                            <h4 class="suspension">Bouchée de homard croustillant</h4>
+                            <p class="suspension">Et sa farandole de petits légumes</p>
+                        </article>
+                        <article class="sous_intitule">
                             <p>35€</p>
-                        </div>    
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>    
                     </article>
-                    <article>
-                        <p>Velouté de cèpes</p>
-                        <div>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Velouté de cèpes</h4>
                             <p>Aux truffes</p>
+                        </article>
+                        <article class="sous_intitule">  
                             <p>20€</p>
-                        </div>    
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>    
                     </article>
                 </section>
+
                 <section class="animation animation2">
-                    <section>
-                        <p>PLATS</p>
-                        <article>
-                            <p>Poulet rôti aux herbes de provence</p>
-                            <div>
-                                <p>Et sa crème de truffe</p>
-                                <p>40€</p>
-                            </div>    
+                    <h3>PLATS</h3>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Poulet rôti aux herbes de provence</h4>
+                            <p>Et sa crème de truffe</p>
                         </article>
-                    </section>
-                    <article>
-                        <p>Langouste rôtie</p>
-                        <div>
-                            <p>Et ses légumes de saison</p>
-                            <p>35€</p>
-                        </div>    
+                        <article class="sous_intitule">
+                            <p>40€</p>
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>     
                     </article>
-                    <article>
-                        <p>Côte de boeuf angus</p>
-                        <div>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Langouste rôtie</h4>
+                            <p>Et ses légumes de saison</p>
+                        </article>
+                        <article class="sous_intitule"> 
+                            <p>35€</p>
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article> 
+                    </article>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Côte de boeuf angus</h4>
                             <p>Et sa purée de panais</p>
+                        </article>
+                        <article class="sous_intitule">
                             <p>44€</p>
-                        </div>    
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>    
                     </article>
                 </section>
+
                 <section class="animation animation3">
-                    <section>
-                        <p>DESSERTS</p>
-                        <article>
-                            <p>Farandole de desserts</p>
-                            <div>
-                                <p>Du chef</p>
-                                <p>18€</p>
-                            </div>    
+                    <h3>DESSERTS</h3>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Farandole de desserts</h4>
+                            <p>Du chef</p>
                         </article>
-                    </section>
-                    <article>
-                        <p>Crème brûlée</p>
-                        <div>
-                            <p>Revisitée</p>
-                            <p>22€</p>
-                        </div>    
+                        <article class="sous_intitule"> 
+                            <p>18€</p>
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article> 
                     </article>
-                    <article>
-                        <p>Tiramisu</p>
-                        <div>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Crème brûlée</h4>
+                            <p>Revisitée</p>
+                        </article>
+                        <article class="sous_intitule">   
+                            <p>22€</p>
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>    
+                    </article>
+                    <article class="card">
+                        <article class="intitule">
+                            <h4>Tiramisu</h4>
                             <p>A la noisette</p>
+                        </article>
+                        <article class="sous_intitule">   
                             <p>23€</p>
-                        </div>    
+                            <p class="check"><i class="fas fa-check"></i></p>
+                        </article>       
                     </article>
                 </section>
                 <p class="btn"><a href="#">Commander</a></p>

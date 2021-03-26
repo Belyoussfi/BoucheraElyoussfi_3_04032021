@@ -1,5 +1,6 @@
 body {
   max-width: 600px;
+  position: relative;
 }
 
 * {
@@ -15,29 +16,26 @@ p, span, a {
   font-family: roboto;
 }
 
-.header1 {
+header {
   text-align: center;
-}
-
-.header1 .logo img {
-  width: 60%;
 }
 
 .header2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 1em;
+}
+
+.header2 h1 {
+  width: 100%;
 }
 
 .header2 a {
   color: black;
+  margin-left: 1em;
 }
 
 .accueil {
@@ -302,167 +300,11 @@ footer section ul li {
   margin-top: 1em;
 }
 
-footer section ul li .space {
-  margin-left: 0.5em;
+footer section ul li i {
+  margin-right: 0.5em;
 }
 
 footer section ul li a {
   font-size: 0.8em;
-}
-
-.restaurant {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.restaurant img {
-  height: 180px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.restaurant_menu {
-  background-color: #f2f2f2;
-  margin-top: -2.3em;
-  padding: 1em 1em 3em 1em;
-  border-radius: 1.5em 1.5em 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.restaurant_menu .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.restaurant_menu .title h1 {
-  font-size: 1.3em;
-}
-
-.restaurant .menu section {
-  margin-top: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.restaurant .menu section article {
-  border-radius: 10px;
-  background-color: white;
-  padding: 0.7em;
-  margin-top: 0.5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  cursor: pointer;
-}
-
-.restaurant .menu section article > p {
-  font-weight: bold;
-}
-
-.restaurant .menu section article div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.restaurant .menu section article div p {
-  font-size: 0.8em;
-}
-
-.restaurant .menu section article div p:nth-child(2) {
-  font-weight: bold;
-}
-
-.animation {
-  -webkit-animation: opacity 4s;
-          animation: opacity 4s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-@-webkit-keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.animation1 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.animation2 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.animation3 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
-.btn {
-  margin: 2em 3em 0 3em;
-  border-radius: 40px;
-  background: #9356DC radial-gradient(circle, transparent 1%, #9356DC 1%) center/15000%;
-  padding: 0.8em;
-  text-align: center;
-  -webkit-transition: background 3s;
-  transition: background 3s;
-}
-
-.btn:hover {
-  background-color: #FF79DA;
-  background-size: 100%;
-}
-
-.btn a {
-  color: white;
 }
 /*# sourceMappingURL=style.css.map */
