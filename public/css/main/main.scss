@@ -1,0 +1,76 @@
+/* Main constitué des points communs entre la Page Accueil et les Pages du menu: header/footer*/
+body{
+    max-width: 767px;
+    position: relative;
+    margin: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+}
+
+.header2{
+    display: flex;
+    align-items: center;
+    h1{
+        width: 100%;
+    }
+    a{ 
+        margin-left: 1em;
+    }
+}
+
+footer{
+    padding: 1em 0 1em 1em;
+    background-color: #303030;
+    section{ 
+        display: flex;
+        flex-direction: column;
+        h5{
+            font-size: 1.1em;
+        }
+        .color{
+            color:white
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            li{
+                margin-top: 1em;
+                i{
+                    margin-right: 0.5em;
+                }
+                a{
+                    font-size: 0.8em;
+                }
+            }
+        } 
+    }
+} 
+
+button{ /* ça renvoit à la stylisation des coeurs présents sur toutes les pages pour créer effet de remplissage */
+    border: none;
+    i{
+        cursor: pointer;
+        font-size: 1.7em;
+    }
+}
+
+h1, h5{
+    font-family: shrikhand;
+}
+
+p, a, h2, h3, h4{
+    font-family: roboto;
+}
+
+a{
+    text-decoration: none;
+}
+

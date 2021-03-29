@@ -27,21 +27,6 @@
           animation-fill-mode: both;
 }
 
-.animation1 {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-
-.animation2 {
-  -webkit-animation-delay: 2500ms;
-          animation-delay: 2500ms;
-}
-
-.animation3 {
-  -webkit-animation-delay: 3500ms;
-          animation-delay: 3500ms;
-}
-
 @-webkit-keyframes opacity {
   from {
     opacity: 0;
@@ -60,6 +45,24 @@
   }
 }
 
+.animation1 {
+  /* Section Entree */
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.animation2 {
+  /* Section Plats */
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
+}
+
+.animation3 {
+  /* Section Desserts */
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms;
+}
+
 /* Au clic, effet texte rogné avec ... et apparition de l'icône check */
 .fa-check {
   /*design icône */
@@ -72,10 +75,12 @@
   opacity: 0;
 }
 
-.card:active .fa-check {
+.card:hover .fa-check {
   /*effet rotate de l'icône */
   -webkit-animation: rotate 1s;
           animation: rotate 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 @-webkit-keyframes rotate {
@@ -94,15 +99,18 @@
   }
 }
 
-.card:active .check {
+.card:hover .check {
   /* parent de l'icône sur fond vert */
   -webkit-animation: padding 1s;
           animation: padding 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 @-webkit-keyframes padding {
   to {
     background-color: #99E2D0;
+    border-radius: 0 0.8em 0.8em 0;
     padding: 0 0.8em;
     margin-left: 0.5em;
   }
@@ -111,28 +119,31 @@
 @keyframes padding {
   to {
     background-color: #99E2D0;
+    border-radius: 0 0.8em 0.8em 0;
     padding: 0 0.8em;
     margin-left: 0.5em;
   }
 }
 
-.card:active .suspension {
-  /* effet texte rogné par les ... */
-  -webkit-animation: ellipsis 2s;
-          animation: ellipsis 2s;
+.card:hover .suspension {
+  /* effet texte rogné par les ..., propriétés de .suspension cf menu.css */
+  -webkit-animation: ellipsis 1s;
+          animation: ellipsis 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 @-webkit-keyframes ellipsis {
   to {
     text-overflow: ellipsis;
-    width: 150px;
+    width: 160px;
   }
 }
 
 @keyframes ellipsis {
   to {
     text-overflow: ellipsis;
-    width: 150px;
+    width: 160px;
   }
 }
 
@@ -193,8 +204,8 @@
   }
 }
 
-.header1, main, footer {
-  /* Opacité du body pour le load spinnerdonner des class pour que l'animation soit sur la page accueil et non page menu */
+.header1, main, .footer1 {
+  /* Opacité body pour le load spinner et donner class pour que l'animation soit sur la page accueil */
   -webkit-animation: disparition 2s;
           animation: disparition 2s;
   -webkit-animation-delay: 2s;
@@ -214,5 +225,18 @@
   to {
     opacity: 1;
   }
+}
+
+button i::before {
+  /* effet de remplissage pour les boutons en coeur sur la page accueil et page menu */
+  content: "";
+  font-weight: lighter;
+  -webkit-transition: all 2.5s ease-out;
+  transition: all 2.5s ease-out;
+}
+
+button i:hover::before {
+  font-weight: bold;
+  color: #9356DC;
 }
 /*# sourceMappingURL=animation.css.map */
