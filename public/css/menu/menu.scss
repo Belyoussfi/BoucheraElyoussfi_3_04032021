@@ -30,7 +30,7 @@ $tertiaire: #99E2D0;
         }
     }
     .menu{
-        section{
+        .animation{
             margin-top: 1.5em;
             display: flex;
             flex-direction: column;
@@ -56,12 +56,12 @@ $tertiaire: #99E2D0;
                 }
                 .sous_intitule{
                     display: flex;
-                    p:nth-child(1){
+                    p:nth-child(2){
                         font-weight: bold;
                         align-self: flex-end;
                         padding-bottom: 0.5em;
                     }
-                    p:nth-child(2){
+                    p:nth-child(3){
                         display: flex;
                         align-items: center;
                     }

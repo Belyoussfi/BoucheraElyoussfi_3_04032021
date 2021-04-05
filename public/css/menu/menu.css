@@ -53,7 +53,7 @@
   margin: 2em 3em 0 3em;
 }
 
-.restaurant .menu section {
+.restaurant .menu .animation {
   margin-top: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,14 +64,14 @@
           flex-direction: column;
 }
 
-.restaurant .menu section h3 {
+.restaurant .menu .animation h3 {
   border-bottom: 0.2em solid #99E2D0;
   width: 2.5em;
   font-weight: 400;
   font-size: 1.2em;
 }
 
-.restaurant .menu section .card {
+.restaurant .menu .animation .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,30 +84,30 @@
   border-radius: 0.8em;
 }
 
-.restaurant .menu section .card .intitule {
+.restaurant .menu .animation .card .intitule {
   padding: 0.5em 0 0.5em 0.5em;
 }
 
-.restaurant .menu section .card .intitule .suspension {
+.restaurant .menu .animation .card .intitule .suspension {
   /* cf: animation.scss pour créer l'effet rogné par les...*/
   overflow: hidden;
   white-space: nowrap;
 }
 
-.restaurant .menu section .card .sous_intitule {
+.restaurant .menu .animation .card .sous_intitule {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.restaurant .menu section .card .sous_intitule p:nth-child(1) {
+.restaurant .menu .animation .card .sous_intitule p:nth-child(2) {
   font-weight: bold;
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding-bottom: 0.5em;
 }
 
-.restaurant .menu section .card .sous_intitule p:nth-child(2) {
+.restaurant .menu .animation .card .sous_intitule p:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
