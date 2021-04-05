@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="public/css/animation/animation.css">
     <link rel="stylesheet" href="public/css/menu/menu.css">
     <link rel="stylesheet" href="public/css/main/main.css">
+    <link rel="stylesheet" href="public/css/responsive/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,126 +20,153 @@
         <h1>ohmyfood</h1>
     </header> 
     <section class="restaurant">
+        <h2 hidden>restaurant</h2>
         <p><img src="public/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo plat restaurant le délice des sens"></p> 
         <section class="restaurant_menu">
+            <h2 hidden>restaurant_menu</h2>
             <article class="title">
                 <h2>Le délice des sens</h2>
                 <button><i class="far fa-heart"></i></button>
             </article>    
             <section class="menu">
+                <h2 hidden>menu></h2>
                 <section class="animation animation1"> <!--Cette class sert pour les effets en decalage en groupe "entree/plat/dessert"-->
-                    <h3>ENTREES</h3><!--h3 et h4 utilisés pour le référencement-->
-                    <article class="card">
-                        <article class="intitule">
-                            <h4>Tartare de thon</h4>
-                            <p>Assaisonné au yuzu</p>
+                    <h3>ENTR&Eacute;ES</h3><!--h3 et h4 utilisés pour le référencement-->
+                    <div>
+                        <article class="card">
+                            <h3 hidden>card</h3>
+                            <article class="intitule">
+                                <h4>Tartare de thon</h4>
+                                <p>Assaisonné au yuzu</p>
+                            </article>
+                            <article class="sous_intitule">
+                                <h4 hidden>sous_intitule</h4>
+                                <p>25€</p>
+                                <p class="check"><i class="fas fa-check"></i></p>
+                            </article>      
+                        </article> 
+                        <article class="card">
+                            <h3 hidden>card</h3>
+                            <article class="intitule">
+                                <h4 class="suspension">Bouchée de homard croustillant</h4>
+                                <p class="suspension">Et sa farandole de petits légumes</p>
+                            </article>
+                            <article class="sous_intitule">
+                                <h4 hidden>sous_intitule</h4>
+                                <p>35€</p>
+                                <p class="check"><i class="fas fa-check"></i></p>
+                            </article>    
                         </article>
-                        <article class="sous_intitule">
-                            <p>25€</p>
-                            <p class="check"><i class="fas fa-check"></i></p>
-                        </article>      
-                    </article> 
-                    <article class="card">
-                        <article class="intitule">
-                            <h4 class="suspension">Bouchée de homard croustillant</h4>
-                            <p class="suspension">Et sa farandole de petits légumes</p>
+                        <article class="card">
+                            <h3 hidden>card</h3>
+                            <article class="intitule">
+                                <h4>Velouté de cèpes</h4>
+                                <p>Aux truffes</p>
+                            </article>
+                            <article class="sous_intitule">  
+                                <h4 hidden>sous_intitule</h4>
+                                <p>20€</p>
+                                <p class="check"><i class="fas fa-check"></i></p>
+                            </article>    
                         </article>
-                        <article class="sous_intitule">
-                            <p>35€</p>
-                            <p class="check"><i class="fas fa-check"></i></p>
-                        </article>    
-                    </article>
-                    <article class="card">
-                        <article class="intitule">
-                            <h4>Velouté de cèpes</h4>
-                            <p>Aux truffes</p>
-                        </article>
-                        <article class="sous_intitule">  
-                            <p>20€</p>
-                            <p class="check"><i class="fas fa-check"></i></p>
-                        </article>    
-                    </article>
+                    </div>    
                 </section>
 
                 <section class="animation animation2">
                     <h3>PLATS</h3>
-                    <article class="card">
-                        <article class="intitule">
-                            <h4>Poulet rôti aux herbes de provence</h4>
-                            <p>Et sa crème de truffe</p>
+                    <div>
+                        <article class="card">
+                            <h3 hidden>card</h3>
+                            <article class="intitule">
+                                <h4>Poulet rôti aux herbes de provence</h4>
+                                <p>Et sa crème de truffe</p>
+                            </article>
+                            <article class="sous_intitule">
+                                <h4 hidden>sous_intitule</h4>
+                                <p>40€</p>
+                                <p class="check"><i class="fas fa-check"></i></p>
+                            </article>     
                         </article>
-                        <article class="sous_intitule">
-                            <p>40€</p>
-                            <p class="check"><i class="fas fa-check"></i></p>
-                        </article>     
-                    </article>
-                    <article class="card">
-                        <article class="intitule">
-                            <h4>Langouste rôtie</h4>
-                            <p>Et ses légumes de saison</p>
+                        <article class="card">
+                            <h3 hidden>card</h3>
+                            <article class="intitule">
+                                <h4>Langouste rôtie</h4>
+                                <p>Et ses légumes de saison</p>
+                            </article>
+                            <article class="sous_intitule"> 
+                                <h4 hidden>sous_intitule</h4>
+                                <p>35€</p>
+                                <p class="check"><i class="fas fa-check"></i></p>
+                            </article> 
                         </article>
-                        <article class="sous_intitule"> 
-                            <p>35€</p>
-                            <p class="check"><i class="fas fa-check"></i></p>
-                        </article> 
-                    </article>
-                    <article class="card">
-                        <article class="intitule">
-                            <h4>Côte de boeuf angus</h4>
-                            <p>Et sa purée de panais</p>
+                        <article class="card">
+                            <h3 hidden>card</h3>
+                            <article class="intitule">
+                                <h4>Côte de boeuf angus</h4>
+                                <p>Et sa purée de panais</p>
+                            </article>
+                            <article class="sous_intitule">
+                                <h4 hidden>sous_intitule</h4>
+                                <p>44€</p>
+                                <p class="check"><i class="fas fa-check"></i></p>
+                            </article>    
                         </article>
-                        <article class="sous_intitule">
-                            <p>44€</p>
-                            <p class="check"><i class="fas fa-check"></i></p>
-                        </article>    
-                    </article>
+                    </div>    
                 </section>
 
                 <section class="animation animation3">
                     <h3>DESSERTS</h3>
-                    <article class="card">
-                        <article class="intitule">
-                            <h4>Farandole de desserts</h4>
-                            <p>Du chef</p>
+                    <div>
+                        <article class="card">
+                            <h3 hidden>card</h3>
+                            <article class="intitule">
+                                <h4>Farandole de desserts</h4>
+                                <p>Du chef</p>
+                            </article>
+                            <article class="sous_intitule"> 
+                                <h4 hidden>sous_intitule</h4>
+                                <p>18€</p>
+                                <p class="check"><i class="fas fa-check"></i></p>
+                            </article> 
                         </article>
-                        <article class="sous_intitule"> 
-                            <p>18€</p>
-                            <p class="check"><i class="fas fa-check"></i></p>
-                        </article> 
-                    </article>
-                    <article class="card">
-                        <article class="intitule">
-                            <h4>Crème brûlée</h4>
-                            <p>Revisitée</p>
+                        <article class="card">
+                            <h3 hidden>card</h3>
+                            <article class="intitule">
+                                <h4>Crème brûlée</h4>
+                                <p>Revisitée</p>
+                            </article>
+                            <article class="sous_intitule"> 
+                                <h4 hidden>sous_intitule</h4>  
+                                <p>22€</p>
+                                <p class="check"><i class="fas fa-check"></i></p>
+                            </article>    
                         </article>
-                        <article class="sous_intitule">   
-                            <p>22€</p>
-                            <p class="check"><i class="fas fa-check"></i></p>
-                        </article>    
-                    </article>
-                    <article class="card">
-                        <article class="intitule">
-                            <h4>Tiramisu</h4>
-                            <p>A la noisette</p>
+                        <article class="card">
+                            <h3 hidden>card</h3>
+                            <article class="intitule">
+                                <h4>Tiramisu</h4>
+                                <p>A la noisette</p>
+                            </article>
+                            <article class="sous_intitule">   
+                                <h4 hidden>sous_intitule</h4>
+                                <p>23€</p>
+                                <p class="check"><i class="fas fa-check"></i></p>
+                            </article>       
                         </article>
-                        <article class="sous_intitule">   
-                            <p>23€</p>
-                            <p class="check"><i class="fas fa-check"></i></p>
-                        </article>       
-                    </article>
+                    </div>    
                 </section>
-                <p class="btn"><a href="#">Commander</a></p>
             </section> 
+            <p class="btn"><a href="#">Commander</a></p>
         </section>    
     </section>
     <footer>
         <section>
-            <h5 class="color">Ohmyfood</h5>
+            <h5>Ohmyfood</h5>
             <ul>
-                <li class="color"><i class="fas fa-utensils"></i><a class="color" href="#">Proposer un restaurant</a></li>
-                <li class="color"><i class="fas fa-hands-helping"></i><a class="color" href="#">Devenir partenaire</a></li>
-                <li><a class="color" href="#">Mentions légales</a></li>
-                <li><a class="color" href="mailto:adresse@mail.com">Contact</a></li>
+                <li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+                <li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:adresse@mail.com">Contact</a></li>
             </ul>
         </section>
     </footer>

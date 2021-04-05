@@ -19,7 +19,7 @@
 .restaurant_menu {
   background-color: #f2f2f2;
   margin-top: -2.3em;
-  padding: 1em 1em 3em 1em;
+  padding: 1em 0.5em 3em 0.5em;
   border-radius: 1.5em 1.5em 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,15 +41,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 1.4em;
 }
 
 .restaurant_menu .title h2 {
   font-family: shrikhand;
-  font-size: 1.3em;
+  font-size: 1.4rem;
 }
 
-.restaurant_menu .title button i {
-  margin-right: 0.8em;
+.restaurant_menu .btn {
+  margin: 2em 3em 0 3em;
 }
 
 .restaurant .menu section {
@@ -66,8 +67,8 @@
 .restaurant .menu section h3 {
   border-bottom: 0.2em solid #99E2D0;
   width: 2.5em;
-  font-weight: lighter;
-  font-size: 1em;
+  font-weight: 400;
+  font-size: 1.2em;
 }
 
 .restaurant .menu section .card {
@@ -87,15 +88,10 @@
   padding: 0.5em 0 0.5em 0.5em;
 }
 
-.restaurant .menu section .card .intitule h4 {
-  font-size: 0.9em;
-}
-
 .restaurant .menu section .card .intitule .suspension {
-  /* cf: animation.css pour créer l'effet rogné par les...*/
+  /* cf: animation.scss pour créer l'effet rogné par les...*/
   overflow: hidden;
   white-space: nowrap;
-  width: 230px;
 }
 
 .restaurant .menu section .card .sous_intitule {
@@ -108,7 +104,7 @@
   font-weight: bold;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 0.5em 0 0.5em 0;
+  padding-bottom: 0.5em;
 }
 
 .restaurant .menu section .card .sous_intitule p:nth-child(2) {
@@ -118,9 +114,5 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.restaurant .menu section .card p {
-  font-size: 0.7em;
 }
 /*# sourceMappingURL=menu.css.map */

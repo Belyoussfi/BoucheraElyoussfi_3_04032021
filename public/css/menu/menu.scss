@@ -11,7 +11,7 @@ $tertiaire: #99E2D0;
     &_menu{
         background-color: #f2f2f2;
         margin-top: -2.3em;
-        padding: 1em 1em 3em 1em;
+        padding: 1em 0.5em 3em 0.5em;
         border-radius: 1.5em 1.5em 0 0;
         display: flex;
         flex-direction: column;
@@ -19,13 +19,14 @@ $tertiaire: #99E2D0;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-right: 1.4em;
             h2{
                 font-family: shrikhand;
-                font-size: 1.3em;
+                font-size: 1.4rem;
             }
-            button i{
-                margin-right: 0.8em;
-            }
+        }
+        .btn{
+            margin: 2em 3em 0 3em;
         }
     }
     .menu{
@@ -36,8 +37,8 @@ $tertiaire: #99E2D0;
             h3{
                 border-bottom: 0.2em solid $tertiaire;
                 width: 2.5em;
-                font-weight: lighter;
-                font-size: 1em;
+                font-weight: 400;
+                font-size: 1.2em;
             }
             .card{
                 display: flex;
@@ -48,13 +49,9 @@ $tertiaire: #99E2D0;
                 border-radius: 0.8em;
                 .intitule{
                     padding: 0.5em 0 0.5em 0.5em;
-                    h4{
-                        font-size: 0.9em;
-                    }
-                    .suspension{ /* cf: animation.css pour créer l'effet rogné par les...*/
+                    .suspension{ /* cf: animation.scss pour créer l'effet rogné par les...*/
                         overflow: hidden;
                         white-space: nowrap;
-                        width: 230px;
                     }
                 }
                 .sous_intitule{
@@ -62,15 +59,12 @@ $tertiaire: #99E2D0;
                     p:nth-child(1){
                         font-weight: bold;
                         align-self: flex-end;
-                        padding: 0.5em 0 0.5em 0;
+                        padding-bottom: 0.5em;
                     }
                     p:nth-child(2){
                         display: flex;
                         align-items: center;
                     }
-                }
-                p{
-                    font-size: 0.7em;
                 }
             } 
         }    

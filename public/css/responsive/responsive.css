@@ -1,0 +1,122 @@
+@media screen and (min-width: 768px){
+    .restaurants_carte{ /* carte de la page Accueil */
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    .restaurants img{ /* Images de la page accueil */
+        height: 200px;
+    }
+    .sous_titre{ /* h3 de la page Accueil */
+        text-align: center;
+    }
+    .filtres li{
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    .filtres span{ /* chiffres 1,2,3 mentionnés sur les filtres de la page accueil*/
+        margin-left: 5em;
+    }
+    .restaurant img{ /* Image en tête de page sur la page Menu */
+        height: 300px;
+    }
+    .title{ /* article contenant le titre h2 du restaurant et le coeur du menu*/
+        margin-left: 3em;
+        padding-right: 3.5em;
+    }
+    .animation{ /* carte des restaurants de la page des menus */
+        margin: 0 3em;
+    }
+    .card{ /* les entrées, plats et desserts */
+        margin-bottom: 1em;
+    }
+    footer section{
+        align-items: center;
+    }
+    footer ul{
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .header2 a{
+        margin-left: 2em;
+    }
+    body{
+        margin: 0 2em;
+    }
+    .restaurants{ /* conteneur des cartes de la page accueil */
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .restaurants h3{
+        width: 100%;
+    }
+    .restaurants_carte{ 
+        width: 300px;
+        margin-top: 1em;
+    }
+    .filtres li{
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+    .filtres span{
+        margin-left: 10em;
+    }
+    .animation{
+        margin-top: 1em;
+    }
+    div{ /* bloc contenant toutes les entrées, les plats et les desserts */
+        margin-top: 2em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .card{ 
+        width: 400px;
+    }
+    .restaurant_menu .btn{
+        align-self:flex-end;
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        margin: 0;
+    }
+    .filtres li{ /* barre de recherche, localisation, restaurant de la page accueil */
+        margin-left: 25em;
+        margin-right: 25em;
+    }
+    .filtres span{
+        margin-left: 25em;
+    }
+    .restaurants_carte{ /* Carte de la page Accueil */
+        width: 230px;
+    }
+    .restaurant{ /* Conteneur de la Page Menu */
+        margin: 0 2em;
+    }
+    .title{ /* Titre du restaurant et le coeur de la page menu*/
+        width: 500px;
+        align-self: center;
+        padding: 0;
+    }
+    div{ /* bloc contenant les entrees, plats puis les deserts */
+        justify-content: space-evenly;
+    }
+    .card{ /* élément contenant une entrée ou un plat etc.. */
+        margin-right: 0.5em;
+    }
+    .animation{ /* Entrees, plats et desserts centrés */
+        align-items: center;
+        margin: 2em 0;
+    }
+    .restaurant_menu .btn{ /* bouton commander */
+        align-self:center;
+        width: 350px;
+    }
+}

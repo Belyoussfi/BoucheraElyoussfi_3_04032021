@@ -4,10 +4,9 @@ $tertiaire: #99E2D0;
 
 /* Au survol, les boutons devront légèrement s'éclaircir */
 .btn{
-    margin: 2em 3em 0 3em;
     border-radius: 40px;
     background: $primaire radial-gradient(circle, transparent 1%, $primaire 1%) center/15000%;
-    padding: 0.8em;
+    padding: 1em;
     text-align: center;
     transition: background 3s;
     &:hover{
@@ -83,26 +82,29 @@ $tertiaire: #99E2D0;
 .card:hover .suspension{ /* effet texte rogné par les ..., propriétés de .suspension cf menu.css */ 
     animation: ellipsis 1s;
     animation-fill-mode: both;
+    width: 230px;
     @keyframes ellipsis{
         to{
             text-overflow: ellipsis;
-            width: 160px;
+            width: 200px;
         }
     }
+}
+
+body{ /* le load est centré au milieu de la page verticalement et horizontalement */
+    position: relative;
 }
 
 .loader{ /* Load spinner sur la page Accueil */
     width: 100%;
     height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
 }
 
 .loader div{
-    text-align: center;
-    margin-top: 7em;
     font-size: 2em;
     font-weight: bold;
     color: $secondaire;
@@ -141,11 +143,12 @@ $tertiaire: #99E2D0;
 
 button i::before{ /* effet de remplissage pour les boutons en coeur sur la page accueil et page menu */
     content: "";
-    font-weight: lighter;
-    transition: all 2.5s ease-out;
+    transition: all 2s ease-out;
 }
 
 button i:hover::before{
     font-weight: bold;
     color: $primaire;
 }
+
+

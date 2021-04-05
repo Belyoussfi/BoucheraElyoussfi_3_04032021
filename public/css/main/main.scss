@@ -1,8 +1,6 @@
-/* Main constitué des points communs entre la Page Accueil et les Pages du menu: header/footer*/
+/* Main constitué des points communs entre la Page Accueil et les Pages du menu: header/footer/font-family/size */
 body{
-    max-width: 767px;
-    position: relative;
-    margin: auto;
+    min-width: 310px;
 }
 
 * {
@@ -14,6 +12,10 @@ header{
     text-align: center;
 }
 
+h1{
+    font-size: 2em;
+}
+
 .header2{
     display: flex;
     align-items: center;
@@ -21,21 +23,21 @@ header{
         width: 100%;
     }
     a{ 
-        margin-left: 1em;
+        margin-left: 0.5em;
     }
 }
 
 footer{
-    padding: 1em 0 1em 1em;
+    padding: 2em 0 2em 0.5em;
     background-color: #303030;
     section{ 
         display: flex;
         flex-direction: column;
-        h5{
-            font-size: 1.1em;
+        *{ 
+            color: white;
         }
-        .color{
-            color:white
+        h5{
+            font-size: 1.4em;
         }
         ul{
             display: flex;
@@ -45,9 +47,6 @@ footer{
                 margin-top: 1em;
                 i{
                     margin-right: 0.5em;
-                }
-                a{
-                    font-size: 0.8em;
                 }
             }
         } 
@@ -62,15 +61,23 @@ button{ /* ça renvoit à la stylisation des coeurs présents sur toutes les pag
     }
 }
 
+button:focus{
+    outline: 0;
+}
+
 h1, h5{
     font-family: shrikhand;
 }
 
 p, a, h2, h3, h4{
     font-family: roboto;
-}
-
-a{
     text-decoration: none;
 }
 
+.card p, .resto_name p{ /* ciblage du sous-intitule de chaque carte de la page Accueil et page du Menu */
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
+}
+
+h4{ /* ciblage du titre de chaque carte de la page Accueil et page du Menu */
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+}

@@ -16,6 +16,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: solid #dcdcdc 1px;
   background-color: #c0c0c0;
   padding: 0.5em;
@@ -41,8 +44,17 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 2em 0;
+  padding: 2em 1em;
   background-color: #f2f2f2;
+}
+
+.accueil_intro h2 {
+  font-size: 1.7em;
+  margin-bottom: 0.5em;
+}
+
+.accueil_intro :nth-child(3) {
+  margin-top: 1em;
 }
 
 .filtres {
@@ -53,7 +65,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1em;
+  margin: 2em 0.5em;
 }
 
 .filtres ul {
@@ -67,7 +79,7 @@
 }
 
 .filtres ul > li {
-  margin: 0.5em 0 0 0.5em;
+  margin-bottom: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,8 +91,8 @@
           align-items: center;
   background-color: #f2f2f2;
   list-style: none;
-  border-radius: 1em;
-  padding: 1em;
+  border-radius: 1.3em;
+  padding: 1.2em;
 }
 
 .filtres ul > li input {
@@ -91,18 +103,17 @@
 .filtres ul > li span {
   position: absolute;
   z-index: 1;
-  left: 1.5em;
+  left: 0.1em;
   border: solid #9356dc 1px;
   border-radius: 50%;
-  font-size: 0.7em;
-  padding: 0.4em;
+  padding: 0.1em;
   color: white;
   background-color: #9356dc;
   font-family: roboto;
 }
 
 .filtres ul > li i {
-  margin-right: 1em;
+  margin: 0 1em;
 }
 
 .filtres ul > li i:hover {
@@ -110,15 +121,15 @@
 }
 
 input[type=text] {
-  /* barre de recherche pour la localisation en haut de page et idem pour les filtres */
-  font-size: 1em;
+  /* barre de recherche pour la localisation en haut de page et pour les filtres "Fonctionnement" */
+  font-size: 1.1em;
   border: none;
   outline: none;
   font-family: roboto;
 }
 
 .restaurants {
-  padding: 2em 1em;
+  padding: 2em 0.5em;
   background-color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,7 +141,7 @@ input[type=text] {
 }
 
 .restaurants_carte {
-  margin: 1em 0 0.5em 0;
+  margin-bottom: 1em;
   border-radius: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,6 +161,7 @@ input[type=text] {
   background-color: #99E2D0;
   padding: 0.4em;
   color: #278870;
+  font-size: 1.1em;
 }
 
 .restaurants_carte img {
@@ -180,14 +192,6 @@ input[type=text] {
           flex-direction: column;
 }
 
-.restaurants_carte .resto_name :first-child {
-  font-size: 0.9em;
-}
-
-.restaurants_carte .resto_name :nth-child(2) {
-  font-size: 0.7em;
-}
-
 .restaurants_carte .resto_button {
   /* cf: voir dans main.css pour l'icône car identique sur page Accueil et Pages des Menus */
   display: -webkit-box;
@@ -199,5 +203,11 @@ input[type=text] {
 
 .restaurants_carte .resto_button button i {
   background-color: white;
+}
+
+.filtres h3, .restaurants h3 {
+  /* h3 de la page accueil */
+  font-size: 1.4em;
+  margin-bottom: 0.7em;
 }
 /*# sourceMappingURL=accueil.css.map */
