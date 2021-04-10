@@ -1,1 +1,242 @@
-/* No CSS *//*# sourceMappingURL=animation.css.map */
+@charset "UTF-8";
+/* Au survol, les boutons devront légèrement s'éclaircir */
+.btn {
+  margin: 2em 3em 0 3em;
+  border-radius: 40px;
+  background: #9356DC radial-gradient(circle, transparent 1%, #9356DC 1%) center/15000%;
+  padding: 0.8em;
+  text-align: center;
+  -webkit-transition: background 3s;
+  transition: background 3s;
+}
+
+.btn:hover {
+  background-color: #FF79DA;
+  background-size: 100%;
+}
+
+.btn a {
+  color: white;
+}
+
+/* Décalage dans le temps par groupe du Menu: Entrée/Plats/Desserts */
+.animation {
+  -webkit-animation: opacity 4s;
+          animation: opacity 4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animation1 {
+  /* Section Entree */
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.animation2 {
+  /* Section Plats */
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
+}
+
+.animation3 {
+  /* Section Desserts */
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms;
+}
+
+/* Au clic, effet texte rogné avec ... et apparition de l'icône check */
+.fa-check {
+  /*design icône */
+  width: 1em;
+  border: solid #99E2D0 1px;
+  border-radius: 50%;
+  padding: 0.3em;
+  color: #99E2D0;
+  background-color: white;
+  opacity: 0;
+}
+
+.card:hover .fa-check {
+  /*effet rotate de l'icône */
+  -webkit-animation: rotate 1s;
+          animation: rotate 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.card:hover .check {
+  /* parent de l'icône sur fond vert */
+  -webkit-animation: padding 1s;
+          animation: padding 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes padding {
+  to {
+    background-color: #99E2D0;
+    border-radius: 0 0.8em 0.8em 0;
+    padding: 0 0.8em;
+    margin-left: 0.5em;
+  }
+}
+
+@keyframes padding {
+  to {
+    background-color: #99E2D0;
+    border-radius: 0 0.8em 0.8em 0;
+    padding: 0 0.8em;
+    margin-left: 0.5em;
+  }
+}
+
+.card:hover .suspension {
+  /* effet texte rogné par les ..., propriétés de .suspension cf menu.css */
+  -webkit-animation: ellipsis 1s;
+          animation: ellipsis 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    text-overflow: ellipsis;
+    width: 160px;
+  }
+}
+
+@keyframes ellipsis {
+  to {
+    text-overflow: ellipsis;
+    width: 160px;
+  }
+}
+
+.loader {
+  /* Load spinner sur la page Accueil */
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.loader div {
+  text-align: center;
+  margin-top: 7em;
+  font-size: 2em;
+  font-weight: bold;
+  color: #FF79DA;
+  font-family: shrikhand;
+  -webkit-animation: load 3s;
+          animation: load 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  opacity: 0;
+}
+
+@-webkit-keyframes load {
+  1% {
+    opacity: 1;
+  }
+  35% {
+    color: #9356DC;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  65% {
+    color: #99E2D0;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+@keyframes load {
+  1% {
+    opacity: 1;
+  }
+  35% {
+    color: #9356DC;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  65% {
+    color: #99E2D0;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+.header1, main, .footer1 {
+  /* Opacité body pour le load spinner et donner class pour que l'animation soit sur la page accueil */
+  -webkit-animation: disparition 2s;
+          animation: disparition 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  opacity: 0;
+}
+
+@-webkit-keyframes disparition {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes disparition {
+  to {
+    opacity: 1;
+  }
+}
+
+button i::before {
+  /* effet de remplissage pour les boutons en coeur sur la page accueil et page menu */
+  content: "";
+  font-weight: lighter;
+  -webkit-transition: all 2.5s ease-out;
+  transition: all 2.5s ease-out;
+}
+
+button i:hover::before {
+  font-weight: bold;
+  color: #9356DC;
+}
+/*# sourceMappingURL=animation.css.map */
